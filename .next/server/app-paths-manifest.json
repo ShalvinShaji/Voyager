@@ -1,4 +1,5 @@
 {
   "/page": "app/page.js",
+  "/memory/new/page": "app/memory/new/page.js",
   "/memory/[id]/page": "app/memory/[id]/page.js"
 }

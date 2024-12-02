@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import CreateEntryModal from '@/components/CreateEntryModal';
 import MemoryGrid from '@/components/MemoryGrid';
+import Link from 'next/link';
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,12 +20,12 @@ export default function Home() {
             Document your adventures, save your memories, and share your journey with the world.
           </p>
           <div className="mt-5 max-w-md mx-auto">
-            <button
-              onClick={() => setIsModalOpen(true)}
-              className="w-full px-8 py-3 border border-black text-base font-medium rounded-md text-white bg-black hover:bg-gray-800 md:py-4 md:text-lg md:px-10 transition-colors duration-200"
+            <Link
+              href="/memory/new"
+              className="w-full px-8 py-3 border border-black text-base font-medium rounded-md text-white bg-black hover:bg-gray-800 md:py-4 md:text-lg md:px-10 transition-colors duration-200 flex items-center justify-center"
             >
               Create Memory
-            </button>
+            </Link>
           </div>
         </div>
 
